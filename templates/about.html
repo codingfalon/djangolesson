@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<p>This is the about page.</p>		
+</html> 
+
+<p> {{aboutText}}</p>
+
+<p> {{person.first_name}} </p>
+{%for person in person %}
+	<li>{{person.first_name}} </li>
+{% endfor %}
+
+{%for sign in sign %}
+	<li>{{sign.astrology_sign}} </li>
+{% endfor %}
+
+
+<p> Venus, {{Libra}}</p>
+<p> Mercury, {{Gemini}}</p>
+<p> Jupiter, {{Sagittarius}}</p>
